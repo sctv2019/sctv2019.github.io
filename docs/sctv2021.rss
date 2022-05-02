@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+    xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
+<channel>
+    <title>sctv2019-2022</title>
+    <itunes:owner>
+        <itunes:email>sctv@jjj123.com</itunes:email>
+    </itunes:owner>
+    <itunes:author>sctvA</itunes:author>
+    <description> sctvD </description>
+    <itunes:image href="http://icac2201.icacnpo.com/images/photocards/pixabay.com/02-photocard.jpg"/>
+    <language>en-us</language>
+    <link>http://icacnpo.com/</link>
+    <item>
+        <title> sctv2021 5000 test31 </title>
+        <description>test31.</description>
+        <pubDate>Fri, 24 Feb 2017 12:00:00 GMT</pubDate>
+        <enclosure url="https://raw.githubusercontent.com/icacnpo/icac2201/main/docs/m4a.5000.amr"
+            type="audio/mpeg" length="1275518"/>
+        <itunes:duration>30:22</itunes:duration>
+        <guid> test31 </guid>
+    </item>
+    <item>
+      <title> 20220101_OCxd06dU9oc </title>
+      <description> sctv2022/docs/20220101_OCxd06dU9oc.8000.amr </description>
+      <pubDate> Mon 02 May 2022 01:35:27 AM EDT </pubDate>
+      <enclosure url="https://raw.githubusercontent.com/sctv2019/sctv2022/main/docs/20220101_OCxd06dU9oc.8000.amr"
+      type=audio/mpeg length="2250702"/>
+      <itunes:duration>35:43</itunes:duration>
+    </item>
+</channel>
+</rss>
