@@ -1,42 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0"
     xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
-  <channel>
-    <title>aaaTitle</title>
+<channel>
+    <title>sctv2019-2022</title>
     <itunes:owner>
-        <itunes:email>aaa@jjj123.com</itunes:email>
+        <itunes:email>sctv@jjj123.com</itunes:email>
     </itunes:owner>
-    <itunes:author>aaaAuthor</itunes:author>
-    <description> aaaDescription </description>
+    <itunes:author>sctvA</itunes:author>
+    <description> sctvD </description>
     <itunes:image href="http://icac2201.icacnpo.com/images/photocards/pixabay.com/02-photocard.jpg"/>
     <language>en-us</language>
-    <link>http://icac2201.icacnpo.com/</link>
+    <link>http://icacnpo.com/</link>
     <item>
-      <title> 5000 test31 </title>
-      <description>test31.</description>
-      <pubDate>Fri, 24 Feb 2017 12:00:00 GMT</pubDate>
-      <enclosure url="https://raw.githubusercontent.com/icacnpo/icac2201/main/docs/m4a.5000.amr"
-                 type="audio/mpeg" length="1275518"/>
-      <itunes:duration>30:22</itunes:duration>
-      <guid> test31 </guid>
+        <title> 5000 test31 </title>
+        <description>test31.</description>
+        <pubDate>Fri, 24 Feb 2017 12:00:00 GMT</pubDate>
+        <enclosure url="https://raw.githubusercontent.com/icacnpo/icac2201/main/docs/m4a.5000.amr"
+            type="audio/mpeg" length="1275518"/>
+        <itunes:duration>30:22</itunes:duration>
+        <guid> test31 </guid>
     </item>
     <item>
-      <title> 6000 test32 </title>
-      <description>test32.</description>
-      <pubDate>Fri, 24 Feb 2017 12:00:00 GMT</pubDate>
-      <enclosure url="https://raw.githubusercontent.com/icacnpo/icac2201/main/docs/m4a.6000.amr"
-                 type="audio/mpeg" length="1457734"/>
-      <itunes:duration>30:22</itunes:duration>
-      <guid> test32 </guid>
+        <title> sctv2019 </title>
+        <description>sctvRealDescription.</description>
+        <pubDate>Fri, 24 Feb 2017 12:00:00 GMT</pubDate>
+        <enclosure url="https://sctv2019.github.io/sctv2019.rss"
+            type="application/xml" length="1684"/>
+        <guid> sctvR </guid>
     </item>
     <item>
-      <title> 8000 test33 </title>
-      <description>test33.</description>
-      <pubDate>Fri, 24 Feb 2017 12:00:00 GMT</pubDate>
-      <enclosure url="https://raw.githubusercontent.com/icacnpo/icac2201/main/docs/m4a.8000.amr"
-                 type="audio/mpeg" length="1913274"/>
-      <itunes:duration>30:22</itunes:duration>
-      <guid> test33 </guid>
+        <title> sctv2020 </title>
+        <description>sctvRealDescription.</description>
+        <pubDate>Fri, 24 Feb 2017 12:00:00 GMT</pubDate>
+        <enclosure url="https://sctv2019.github.io/sctv2020.rss"
+            type="application/xml" length="1684"/>
+        <guid> sctvR </guid>
     </item>
-  </channel>
+    <item>
+        <title> sctv2021 </title>
+        <description>sctvRealDescription.</description>
+        <pubDate>Fri, 24 Feb 2017 12:00:00 GMT</pubDate>
+        <enclosure url="https://sctv2019.github.io/sctv2021.rss"
+            type="application/xml" length="1684"/>
+        <guid> sctvR </guid>
+    </item>
+    <item>
+        <title> sctv2021 </title>
+        <description>sctvRealDescription.</description>
+        <pubDate>Fri, 24 Feb 2017 12:00:00 GMT</pubDate>
+        <enclosure url="https://sctv2019.github.io/sctv2021.rss"
+            type="application/xml" length="1684"/>
+        <guid> sctvR </guid>
+    </item>
+
+</channel>
 </rss>
