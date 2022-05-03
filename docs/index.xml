@@ -25,7 +25,7 @@
         <description>sctvRealDescription.</description>
         <pubDate>Fri, 24 Feb 2017 12:00:00 GMT</pubDate>
         <enclosure url="https://sctv2019.github.io/sctv2019.rss"
-            type="application/xml" length="1684"/>
+            type="application/xml" length="8324"/>
         <guid> sctvR </guid>
     </item>
     <item>
@@ -33,7 +33,7 @@
         <description>sctvRealDescription.</description>
         <pubDate>Fri, 24 Feb 2017 12:00:00 GMT</pubDate>
         <enclosure url="https://sctv2019.github.io/sctv2020.rss"
-            type="application/xml" length="1684"/>
+            type="application/xml" length="173534"/>
         <guid> sctvR </guid>
     </item>
     <item>
@@ -41,7 +41,7 @@
         <description>sctvRealDescription.</description>
         <pubDate>Fri, 24 Feb 2017 12:00:00 GMT</pubDate>
         <enclosure url="https://sctv2019.github.io/sctv2021.rss"
-            type="application/xml" length="1684"/>
+            type="application/xml" length="232460"/>
         <guid> sctvR </guid>
     </item>
     <item>
@@ -49,7 +49,7 @@
         <description>sctvRealDescription.</description>
         <pubDate>Fri, 24 Feb 2017 12:00:00 GMT</pubDate>
         <enclosure url="https://sctv2019.github.io/sctv2022.rss"
-            type="application/xml" length="25433"/>
+            type="application/xml" length="25555"/>
         <guid> sctvR </guid>
     </item>
 
