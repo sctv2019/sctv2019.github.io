@@ -52,37 +52,5 @@
             type="application/xml" length="25555"/>
         <guid> sctvR </guid>
     </item>
-    <item>
-        <title> laohei2019 </title>
-        <description>sctvRealDescription.</description>
-        <pubDate>Fri, 24 Feb 2017 12:00:22 GMT</pubDate>
-        <enclosure url="https://sctv2019.github.io/laohei2019.rss"
-            type="application/xml" length="107494"/>
-        <guid> sctvR </guid>
-    </item>
-    <item>
-        <title> laohei2020 </title>
-        <description>sctvRealDescription.</description>
-        <pubDate>Fri, 24 Feb 2017 12:00:22 GMT</pubDate>
-        <enclosure url="https://sctv2019.github.io/laohei2020.rss"
-            type="application/xml" length="200227"/>
-        <guid> sctvR </guid>
-    </item>
-    <item>
-        <title> laohei2021 </title>
-        <description>sctvRealDescription.</description>
-        <pubDate>Fri, 24 Feb 2017 12:00:22 GMT</pubDate>
-        <enclosure url="https://sctv2019.github.io/laohei2021.rss"
-            type="application/xml" length="207030"/>
-        <guid> sctvR </guid>
-    </item>
-    <item>
-        <title> laohei2022 </title>
-        <description>sctvRealDescription.</description>
-        <pubDate>Fri, 24 Feb 2017 12:00:22 GMT</pubDate>
-        <enclosure url="https://sctv2019.github.io/laohei2022.rss"
-            type="application/xml" length="113963"/>
-        <guid> sctvR </guid>
-    </item>
 </channel>
 </rss>
