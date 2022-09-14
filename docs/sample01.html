@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <script>
+            var songList = [
+                            "https://raw.githubusercontent.com/sctv2019/laohei2022/main/docs/mp3/20220622_Fk5wqKwY10E.16000.mp3" , "https://raw.githubusercontent.com/sctv2019/laohei2022/main/docs/mp3/20220824_qD7oCQ2Y-HI.16000.mp3" , "https://raw.githubusercontent.com/sctv2019/laohei2022/main/docs/mp3/20220414_Wg0hoESSSqE.16000.mp3"
+                        ];
+            //this gets a random url from the list
+            function randomChoice(choices) {
+                            var index = Math.floor(Math.random() * choices.length);
+                            return choices[index];
+                        }
+            //this is just a place holder you can change this function to anything
+
+            /*this trys to pause x and then play a new song but if x is not defined then you 
+           get an error so you have to do try catch finally*/
+            function playAudio() {
+                            try{
+                                            x.pause();
+                                        }
+                            catch(err){
+                                        }
+                            finally{
+                                            t = randomChoice(songList);
+                                            const pp1 = document.getElementById("p1");
+                                            pp1.innerHTML = t ;
+                                            let ff1 = t.lastIndexOf("/") + 1;
+                                            let sub1 = t.substr(ff1);
+                                            let ff2 = sub1.indexOf(".") ;
+                                            let sub2 = sub1.substr(0,ff2);
+                                            const pp2 = document.getElementById("p2");
+                                            pp2.innerHTML = sub2 ;
+                                            x = new Audio(t);
+                                            x.play();
+                                        }
+                        };
+            function pauseAudio() {
+                            x.pause();
+                        }
+        </script>
+
+    </head>
+    <body>
+        <button style="font-size: 150px; background-color: #4CAF50; border-radius: 25%; " onclick="playAudio()" > 播放 </button></h1>
+        <button style="font-size: 150px; background-color: #f44336; border-radius: 25%; " onclick="pauseAudio()"> 暫停 </button>
+        <p id="p1">Hello World!</p>
+        <h1 style="font-size:3vw" id="p2" > Hello World2 </h1>
+    </body>
+</html
