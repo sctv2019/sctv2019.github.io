@@ -20,7 +20,8 @@ func02(){
 ${aa4}__${aa3}
 </audio>
 <br>
-<a href="${aa2}" rel="noopener noreferrer"   >${aa4}   :  ${aa3}</a><br>
+<a href="${aa2}" rel="noopener noreferrer"   > 下载此音频 mp3 : ${aa4}   :  ${aa3}</a><br>
+<a href='https://sctv2019.github.io/all/'> 回到目錄 : https://sctv2019.github.io/all/ </a>
 </div>
 <br>
 
