@@ -17,8 +17,10 @@ func02(){
 <br>
 <audio controls preload="none" style="width: 95%; margin-bottom: 20px">
 <source src="${aa2}" type="audio/mpeg">
-${aa3}
-</audio><a href="${aa2}" rel="noopener noreferrer"   >${aa3}</a><br>
+${aa4}__${aa3}
+</audio>
+<br>
+<a href="${aa2}" rel="noopener noreferrer"   >${aa4}   :  ${aa3}</a><br>
 </div>
 <br>
 
@@ -34,10 +36,12 @@ func03(){
 EOF3
 }
 func021(){
+    aa4=1
     for aa2 in $(cat  ${aa1} |grep url=\"  |tr ' ' "\n" |grep ^url= |awk -F= '{print $2}'|tr -d \")
     do
         aa3=$(echo ${aa2}|sed -e 's;.*/;;g' -e 's;\.8000\.16000\.mp3;;g')
         func02 
+        aa4=$(( ${aa4} + 1 ))
     done
 }
 

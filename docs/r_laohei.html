@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <script>
+            var songList = [
+           "https://raw.githubusercontent.com/sctv2019/laohei2022/main/docs/mp3/20220622_Fk5wqKwY10E.16000.mp3" , "https://raw.githubusercontent.com/sctv2019/laohei2022/main/docs/mp3/20220824_qD7oCQ2Y-HI.16000.mp3" , "https://raw.githubusercontent.com/sctv2019/laohei2022/main/docs/mp3/20220414_Wg0hoESSSqE.16000.mp3"
+                        ];
+            //this gets a random url from the list
+            function randomChoice(choices) {
+                            var index = Math.floor(Math.random() * choices.length);
+                            return choices[index];
+                        }
+            //this is just a place holder you can change this function to anything
+            function age(){
+                            let current = new Date().getTime();
+                            var myAge = current - 1151560800000;
+                            var myAge = myAge/1000
+                            return myAge;
+                        }
+            /*this trys to pause x and then play a new song but if x is not defined then you 
+           get an error so you have to do try catch finally*/
+            function playAudio() {
+                            try{x.pause();}catch(err){
+                                            var old = age();
+                                            var years = old / 31536000;
+                                            console.log('Hello I was ' + old + ' seconds (' + years + ' years) old when you clicked that button!');}finally{
+                                                            x = randomChoice(songList);
+                                                            x = new Audio(x);
+                                                            x.play();
+                                                        }};
+            function pauseAudio() {
+                            x.pause();
+                        }
+        </script>
+
+    </head>
+    <body>
+        <button onclick="playAudio()">play a song</button>
+        <button onclick="pauseAudio()">pause the current song</button>
+    </body>
+</html
