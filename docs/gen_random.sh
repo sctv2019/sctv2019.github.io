@@ -88,6 +88,8 @@ func03(){
     <p id="p1">暫停，等待用戶按鍵 !</p>
     <h1 style="font-size:3vw" id="p2" > 暫停，等待用戶按鍵  !</h1>
     <h1 style="font-size:5vw" id="p3" > === ${bb2} === </h1>
+    <br><br>
+    <a href='https://sctv2019.github.io/all/'> https://sctv2019.github.io/all/ </a>
     </body>
 </html
 
