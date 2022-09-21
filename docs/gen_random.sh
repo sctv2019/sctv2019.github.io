@@ -87,6 +87,10 @@ func03(){
     <button style="font-size: 150px; background-color: #f44336; border-radius: 25%; " onclick="pauseAudio()"> 暫停 </button>
     <p id="p1">暫停，等待用戶按鍵 !</p>
     <h1 style="font-size:3vw" id="p2" > 暫停，等待用戶按鍵  !</h1>
+    <audio id="audio" controls="controls">
+        <source id="audioSource" src=""></source>
+        Your browser does not support the audio format.
+    </audio>
     <h1 style="font-size:5vw" id="p3" > === ${bb2} === </h1>
     <br><br>
     <a href='https://sctv2019.github.io/all/'> https://sctv2019.github.io/all/ </a>
@@ -138,6 +142,7 @@ do
 done
 func03
 
+exit
 
 
 bb1=r_laohei
