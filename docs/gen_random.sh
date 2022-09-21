@@ -172,7 +172,7 @@ done
 func03
 cat ${bb1}.html > ${bb4}.zip/index.html
 
-exit
+#exit
 
 
 bb1=r_laohei
