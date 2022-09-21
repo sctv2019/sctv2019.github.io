@@ -108,6 +108,37 @@ func021(){
         aa4=$(( ${aa4} + 1 ))
     done
 }
+func022(){
+    dd1=$(echo -n ${aa1}|wc -c)
+    for aa2 in $(find  ${aa1} -type f -name "*.mp3")
+    do
+        if [ ${aa4} -eq 1 ] 
+        then
+            aa3=""
+        else
+            aa3=","
+        fi
+        aa2=${bb3}${aa2:${dd1}}
+        func02 
+        aa4=$(( ${aa4} + 1 ))
+    done
+}
+
+
+
+
+
+bb1=r_sctv02
+bb2='麻辣空間02'
+bb3=http://mp4.eaafb.com/mp3_sctv_
+func01 
+for aa1 in /v1t/100_sctv/mp3_sctv_
+do
+    func022 ${aa1}
+done
+func03
+
+
 
 bb1=r_laohei
 bb2='公民老黑'
