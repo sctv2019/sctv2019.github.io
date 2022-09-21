@@ -78,6 +78,9 @@ func03(){
                                             var audio14 = document.getElementById('audioP14');
                                             audio14.load(); //call this to just preload the audio14 without playing
                                             audio14.play(); //call this to play the song right away
+
+                                            document.getElementById("btPlay").disabled  = false;
+                                            document.getElementById("btPause").disabled = false;
                                         }
                         };
             function playAudio() {
@@ -104,12 +107,15 @@ func03(){
 
     </head>
     <body>
-        <button style="font-size: 90px; background-color: #f44336; border-radius: 25%; " onclick="nextAudio()" > 下一首 </button></h1>
-        <button style="font-size: 90px; background-color: #4CAF50; border-radius: 25%; " onclick="playAudio()" > 播放 </button></h1>
-        <button style="font-size: 90px; background-color: #f44336; border-radius: 25%; " onclick="pauseAudio()"> 暫停 </button>
+<button style="font-size: 105px; background-color: #f44336; border-radius: 25%; " 
+    id="btNext"  onclick="nextAudio()"         > 下一首 </button></h1>
+<button style="font-size: 105px; background-color: #4CAF50; border-radius: 25%; " 
+    id="btPlay"  onclick="playAudio()"  disabled> 播放 </button></h1>
+<button style="font-size: 105px; background-color: #f44336; border-radius: 25%; " 
+    id="btPause" onclick="pauseAudio()" disabled> 暫停 </button>
     <p id="p1">暫停，等待用戶按鍵 !</p>
     <h1 style="font-size:3vw" id="p2" > 暫停，等待用戶按鍵  !</h1>
-    <audio id="audioP14" controls="controls">
+    <audio id="audioP14" controls="controls" style="width: 800px;" >
         <source id="audioSourceP15" src=""></source>
         Your browser does not support the audio format.
     </audio>
