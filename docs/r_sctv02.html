@@ -1216,57 +1216,48 @@
                         }
 
             function nextAudio() {
-                            try{
-                                            //console.log("b201 :", "try_pauseing then start next 1 ");
-                                            x.pause();
-                                            //console.log("b201 :", "try_pauseing then start next 2 ");
-                                        }
-                            catch(err){
-                                        }
-                            finally{
-                                            t = randomChoice(songList);
+                            t = randomChoice(songList);
 
-                                            const pp1 = document.getElementById("p1");
-                                            pp1.innerHTML = t ;
-                                            //console.log("b401 : try play", t );
+                            const pp1 = document.getElementById("p1");
+                            pp1.innerHTML = t ;
+                            //console.log("b401 : try play", t );
 
-                                            let ff1 = t.lastIndexOf("/") + 1;
-                                            let sub1 = t.substr(ff1);
-                                            let ff2 = sub1.indexOf(".") ;
-                                            let sub2 = sub1.substr(0,ff2);
-                                            title2 = sub2 ;
+                            let ff1 = t.lastIndexOf("/") + 1;
+                            let sub1 = t.substr(ff1);
+                            let ff2 = sub1.indexOf(".") ;
+                            let sub2 = sub1.substr(0,ff2);
+                            title2 = sub2 ;
 
-                                            const pp2 = document.getElementById("p2");
-                                            pp2.innerHTML = "播放中 : " + index + " : " + title2 ;
+                            const pp2 = document.getElementById("p2");
+                            pp2.innerHTML = "播放中 : " + index + " : " + title2 ;
 
-                                            const pp3 = document.getElementById("p3");
-                                            pp3.innerHTML = " == 麻辣空間02 / " + len + " ==" ;
+                            const pp3 = document.getElementById("p3");
+                            pp3.innerHTML = " == 麻辣空間02 / " + len + " ==" ;
 
 
-                                            //console.log("b401 : try play", t );
-                                            //x = new Audio(t);
-                                            //x.play();
+                            //console.log("b401 : try play", t );
+                            //x = new Audio(t);
+                            //x.play();
 
-                                            var source15 = document.getElementById('audioSourceP15');
-                                            source15.src = t ;
+                            var source15 = document.getElementById('audioSourceP15');
+                            source15.src = t ;
 
-                                            var audio14 = document.getElementById('audioP14');
-                                            audio14.load(); //call this to just preload the audio14 without playing
-                                            audio14.play(); //call this to play the song right away
+                            var audio14 = document.getElementById('audioP14');
+                            audio14.load(); //call this to just preload the audio14 without playing
+                            audio14.play(); //call this to play the song right away
 
 
-                                            //console.log("inited :", inited);
-                                            if ( inited == 1 ) {
-                                                inited=2;
-                                                document.getElementById("audioP14").style="width:95%;";
-                                            }
-                                            if ( inited == 0 ) {
-                                                document.getElementById("btPlay").disabled  = false;
-                                                document.getElementById("btPause").disabled = false;
-                                                document.getElementById("audioP14").style="width:60%;";
-                                                inited=1;
-                                            }
-                                        }
+                            //console.log("inited :", inited);
+                            if ( inited == 1 ) {
+                                inited=2;
+                                document.getElementById("audioP14").style="width:95%;";
+                            }
+                            if ( inited == 0 ) {
+                                document.getElementById("btPlay").disabled  = false;
+                                document.getElementById("btPause").disabled = false;
+                                document.getElementById("audioP14").style="width:60%;";
+                                inited=1;
+                            }
                         };
             function playAudio() {
                             //console.log("b801 :", "stop only ");
@@ -1300,7 +1291,7 @@
     id="btPause" onclick="pauseAudio()" disabled> 暫停 </button>
     <p id="p1">暫停，等待用戶按鍵 !</p>
     <h1 style="font-size:3vw" id="p2" > 暫停，等待用戶按鍵  !</h1>
-    <audio id="audioP14" controls="controls" style="width: 200px;" >
+    <audio id="audioP14" controls="controls" style="width: 200px; height:64px;" loop>
         <source id="audioSourceP15" src=""></source>
         Your browser does not support the audio format.
     </audio>
