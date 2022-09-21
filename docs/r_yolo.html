@@ -109,6 +109,7 @@
             var index=0 ;
             var result="" ;
             var title2=" 暫停，等待用戶按鍵 " ;
+            var inited=0 ;
 
             function randomChoice(choices) {
                             var rand = Math.random() ;
@@ -162,8 +163,18 @@
                                             audio14.load(); //call this to just preload the audio14 without playing
                                             audio14.play(); //call this to play the song right away
 
-                                            document.getElementById("btPlay").disabled  = false;
-                                            document.getElementById("btPause").disabled = false;
+
+                                            //console.log("inited :", inited);
+                                            if ( inited == 1 ) {
+                                                inited=2;
+                                                document.getElementById("audioP14").style="width:95%;";
+                                            }
+                                            if ( inited == 0 ) {
+                                                document.getElementById("btPlay").disabled  = false;
+                                                document.getElementById("btPause").disabled = false;
+                                                document.getElementById("audioP14").style="width:60%;";
+                                                inited=1;
+                                            }
                                         }
                         };
             function playAudio() {
