@@ -45,7 +45,8 @@ func03(){
                             t = randomChoice(songList);
 
                             const pp1 = document.getElementById("p1");
-                            pp1.innerHTML = t ;
+                            pp1.innerHTML = "點擊下載 ==>> " + t + " <<== 點擊下載" ;
+                            pp1.href = t ;
                             //console.log("b401 : try play", t );
 
                             let ff1 = t.lastIndexOf("/") + 1;
@@ -73,17 +74,6 @@ func03(){
                             audio14.play(); //call this to play the song right away
 
 
-                            //console.log("inited :", inited);
-                            if ( inited == 1 ) {
-                                inited=2;
-                                document.getElementById("audioP14").style="width:95%;";
-                            }
-                            if ( inited == 0 ) {
-                                document.getElementById("btPlay").disabled  = false;
-                                document.getElementById("btPause").disabled = false;
-                                document.getElementById("audioP14").style="width:60%;";
-                                inited=1;
-                            }
                         };
             function playAudio() {
                             //console.log("b801 :", "stop only ");
@@ -105,17 +95,33 @@ func03(){
                             const pp3 = document.getElementById("p2");
                             pp3.innerHTML = "暫停 : " + index + " : " + title2 ;
                         }
+            function startAudio() {
+                //console.log("inited :", inited);
+                if ( inited == 0 ) {
+                    document.getElementById("btPlay").hidden  = false;
+                    document.getElementById("btPause").hidden = false;
+                    document.getElementById("btNext").hidden  = false;
+                    document.getElementById("btStart").hidden = true;
+                    document.getElementById("audioP14").style="width:60%;";
+                    inited=1;
+                    nextAudio() ;
+                }
+            }
         </script>
 
     </head>
     <body>
 <button style="font-size: 105px; background-color: #f44336; border-radius: 25%; " 
-    id="btNext"  onclick="nextAudio()"         > 下一首 </button></h1>
-<button style="font-size: 105px; background-color: #4CAF50; border-radius: 25%; " 
-    id="btPlay"  onclick="playAudio()"  disabled> 播放 </button></h1>
+    id="btStart"  onclick="startAudio()"        > 开始播放 </button></h1>
 <button style="font-size: 105px; background-color: #f44336; border-radius: 25%; " 
-    id="btPause" onclick="pauseAudio()" disabled> 暫停 </button>
-    <p id="p1">暫停，等待用戶按鍵 !</p>
+    id="btNext"  onclick="nextAudio()"   hidden > 下一首 </button></h1>
+<button style="font-size: 105px; background-color: #4CAF50; border-radius: 25%; " 
+    id="btPlay"  onclick="playAudio()"   hidden > 播放 </button></h1>
+<button style="font-size: 105px; background-color: #f44336; border-radius: 25%; " 
+    id="btPause" onclick="pauseAudio()"  hidden > 暫停 </button>
+    <br> <br> <br>
+    <a id="p1" href="${bb5}">${bb5}!</a>
+    <br> <br>
     <h1 style="font-size:3vw" id="p2" > 暫停，等待用戶按鍵  !</h1>
     <audio id="audioP14" controls="controls" style="width: 200px; height:64px;" loop>
         <source id="audioSourceP15" src=""></source>
@@ -123,7 +129,7 @@ func03(){
     </audio>
     <h1 style="font-size:5vw" id="p3" > === ${bb2} === </h1>
     <br><br>
-    <a href='https://sctv2019.github.io/all/'> https://sctv2019.github.io/all/ </a>
+    <a href='${bb5}'> ${bb5} </a>
     </body>
 </html
 
@@ -166,6 +172,7 @@ bb1=r_sctv02
 bb2='麻辣空間02'
 bb3=http://mp4.eaafb.com/mp3_sctv_
 bb4=/v1t/100_sctv/mp3_sctv_
+bb5=https://sctv2019.github.io/all/
 func01 
 for aa1 in ${bb4}
 do
