@@ -40,7 +40,7 @@ func03(){
                             return result ;
                         }
 
-            function playAudio() {
+            function nextAudio() {
                             try{
                                             //console.log("b201 :", "try_pauseing then start next 1 ");
                                             x.pause();
@@ -69,13 +69,34 @@ func03(){
 
 
                                             //console.log("b401 : try play", t );
-                                            x = new Audio(t);
-                                            x.play();
+                                            //x = new Audio(t);
+                                            //x.play();
+
+                                            var source15 = document.getElementById('audioSourceP15');
+                                            source15.src = t ;
+
+                                            var audio14 = document.getElementById('audioP14');
+                                            audio14.load(); //call this to just preload the audio14 without playing
+                                            audio14.play(); //call this to play the song right away
                                         }
                         };
+            function playAudio() {
+                            //console.log("b801 :", "stop only ");
+                            //x.pause();
+
+                            var audio16 = document.getElementById('audioP14');
+                            audio16.play(); //call this to play the song right away
+
+                            const pp3 = document.getElementById("p2");
+                            pp3.innerHTML = "播放 : " + index + " : " + title2 ;
+                        }
             function pauseAudio() {
                             //console.log("b801 :", "stop only ");
-                            x.pause();
+                            //x.pause();
+
+                            var audio17 = document.getElementById('audioP14');
+                            audio17.pause(); //call this to play the song right away
+
                             const pp3 = document.getElementById("p2");
                             pp3.innerHTML = "暫停 : " + index + " : " + title2 ;
                         }
@@ -83,12 +104,13 @@ func03(){
 
     </head>
     <body>
-        <button style="font-size: 150px; background-color: #4CAF50; border-radius: 25%; " onclick="playAudio()" > 播放 </button></h1>
-    <button style="font-size: 150px; background-color: #f44336; border-radius: 25%; " onclick="pauseAudio()"> 暫停 </button>
+        <button style="font-size: 90px; background-color: #f44336; border-radius: 25%; " onclick="nextAudio()" > 下一首 </button></h1>
+        <button style="font-size: 90px; background-color: #4CAF50; border-radius: 25%; " onclick="playAudio()" > 播放 </button></h1>
+        <button style="font-size: 90px; background-color: #f44336; border-radius: 25%; " onclick="pauseAudio()"> 暫停 </button>
     <p id="p1">暫停，等待用戶按鍵 !</p>
     <h1 style="font-size:3vw" id="p2" > 暫停，等待用戶按鍵  !</h1>
-    <audio id="audio" controls="controls">
-        <source id="audioSource" src=""></source>
+    <audio id="audioP14" controls="controls">
+        <source id="audioSourceP15" src=""></source>
         Your browser does not support the audio format.
     </audio>
     <h1 style="font-size:5vw" id="p3" > === ${bb2} === </h1>
@@ -135,12 +157,14 @@ func022(){
 bb1=r_sctv02
 bb2='麻辣空間02'
 bb3=http://mp4.eaafb.com/mp3_sctv_
+bb4=/v1t/100_sctv/mp3_sctv_
 func01 
-for aa1 in /v1t/100_sctv/mp3_sctv_
+for aa1 in ${bb4}
 do
     func022 ${aa1}
 done
 func03
+cat ${bb1}.html > ${bb4}.zip/index.html
 
 exit
 
