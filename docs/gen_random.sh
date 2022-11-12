@@ -86,6 +86,10 @@ func03(){
                             const pp3 = document.getElementById("p2");
                             pp3.innerHTML = "播放 : " + index + " : " + title2 ;
                         }
+            function setRandom() {
+                        }
+            function setSequence() {
+                        }
             function pauseAudio() {
                             //console.log("b801 :", "stop only ");
                             //x.pause();
@@ -113,13 +117,14 @@ func03(){
     </head>
     <body>
 <button style="font-size: 105px; background-color: #f44336; border-radius: 25%; " 
-    id="btStart"  onclick="startAudio()"        > 开始播放 </button></h1>
+    id="btStart"  onclick="startAudio()"        > 开始播放 </button>
 <button style="font-size: 105px; background-color: #f44336; border-radius: 25%; " 
-    id="btNext"  onclick="nextAudio()"   hidden > 下一首 </button></h1>
+    id="btNext"  onclick="nextAudio()"   hidden > 下一首 </button>
 <button style="font-size: 105px; background-color: #4CAF50; border-radius: 25%; " 
-    id="btPlay"  onclick="playAudio()"   hidden > 播放 </button></h1>
+    id="btPlay"  onclick="playAudio()"   hidden > 播放 </button>
 <button style="font-size: 105px; background-color: #f44336; border-radius: 25%; " 
     id="btPause" onclick="pauseAudio()"  hidden > 暫停 </button>
+
     <br> <br> <br>
     <a id="p1" href="${bb5}">${bb5}!</a>
     <br> <br>
@@ -128,7 +133,10 @@ func03(){
         <source id="audioSourceP15" src=""></source>
         Your browser does not support the audio format.
     </audio>
-    <h1 style="font-size:5vw" id="p3" > === ${bb2} === </h1>
+    <h1 style="font-size:5vw" id="p3" > === ${bb2} === </h1> 
+    <input id=checkRandom type="checkbox" checked style=" height: 45px; width: 45px; " > 
+    <label style="font-size: 62px; "> 随机播放 </label> </input>
+    </input>
     <br><br>
     <a href='${bb5}'> ${bb5} </a>
     </body>
