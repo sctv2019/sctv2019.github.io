@@ -24,19 +24,35 @@ func03(){
             var len=Object.keys(songList).length;
             //console.log("b003 : songList length : ", len);
 
-            var index=0 ;
+            var songIndex=0 ;
+            var boolRandom=0 ;
             var result="" ;
             var title2=" 暫停，等待用戶按鍵 " ;
             var inited=0 ;
 
             function randomChoice(choices) {
-                            var rand = Math.random() ;
-                            //console.log("b101 : rand : ", rand);
+                            boolRandom=document.getElementById("idCheckRandom").checked ;
+                            if ( boolRandom ) {
 
-                            index = Math.floor( rand * len);
-                            //console.log("b103 : index : ", index);
+                                var rand = Math.random() ;
+                                //console.log("b101 : rand : ", rand);
 
-                            result = choices['a_' + index];
+                                songIndex = Math.floor( rand * len);
+                                //console.log("b103 : songIndex : ", songIndex);
+
+                            } else {
+                                songIndex = songIndex + 1 ;
+                                if ( songIndex <= 0 ) {
+                                    songIndex = 1 ;
+                                }
+                                if ( songIndex > len ) {
+                                    songIndex = 1 ;
+                                }
+                                //console.log("b104 : songIndex : ", songIndex);
+
+                            }
+
+                            result = choices['a_' + songIndex];
                             //console.log("b109 : result : ", result);
 
                             return result ;
@@ -46,7 +62,7 @@ func03(){
                             t = randomChoice(songList);
 
                             const pp1 = document.getElementById("p1");
-                            pp1.innerHTML = "點擊下載 ==>> " + t + " <<== 點擊下載" ;
+                            pp1.innerHTML = "點擊下載 ==>> " + t + " <<== 點擊下載 : " + boolRandom ;
                             pp1.href = t ;
                             //console.log("b401 : try play", t );
 
@@ -57,7 +73,7 @@ func03(){
                             title2 = sub2 ;
 
                             const pp2 = document.getElementById("p2");
-                            pp2.innerHTML = "播放中 : " + index + " : " + title2 ;
+                            pp2.innerHTML = "播放中 : " + songIndex + " : " + title2 ;
 
                             const pp3 = document.getElementById("p3");
                             pp3.innerHTML = " == ${bb2} / " + len + " ==" ;
@@ -84,7 +100,7 @@ func03(){
                             audio16.play(); //call this to play the song right away
 
                             const pp3 = document.getElementById("p2");
-                            pp3.innerHTML = "播放 : " + index + " : " + title2 ;
+                            pp3.innerHTML = "播放 : " + songIndex + " : " + title2 ;
                         }
             function setRandom() {
                         }
@@ -98,7 +114,7 @@ func03(){
                             audio17.pause(); //call this to play the song right away
 
                             const pp3 = document.getElementById("p2");
-                            pp3.innerHTML = "暫停 : " + index + " : " + title2 ;
+                            pp3.innerHTML = "暫停 : " + songIndex + " : " + title2 ;
                         }
             function startAudio() {
                 //console.log("inited :", inited);
@@ -134,7 +150,7 @@ func03(){
         Your browser does not support the audio format.
     </audio>
     <h1 style="font-size:5vw" id="p3" > === ${bb2} === </h1> 
-    <input id=checkRandom type="checkbox" checked style=" height: 45px; width: 45px; " > 
+    <input id=idCheckRandom type="checkbox" style=" height: 45px; width: 45px; " > 
     <label style="font-size: 62px; "> 随机播放 </label> </input>
     </input>
     <br><br>
