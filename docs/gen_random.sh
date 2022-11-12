@@ -6,6 +6,7 @@ func01(){
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
         <script>
             var songList={};
             //console.log("b001 :", songList);
