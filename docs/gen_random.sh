@@ -166,14 +166,37 @@ func022(){
 }
 
 
+bb3=http://mp4.eaafb.com/mp3_sctv_
+bb4=/v1t/100_sctv/mp3_sctv_
+bb5=https://sctv2019.github.io/all/
+
+#########################################################################
+
+bb1=r_sctv
+bb2='麻辣空間'
+func01 
+for aa1 in sctv2019.mp3.rss sctv2020.mp3.rss sctv2021.mp3.rss sctv2022.mp3.rss
+do
+    func021 ${aa1}
+done
+func03
+
+bb1=r_yolo
+bb2='yolo街'
+func01 
+for aa1 in yolo2022.mp3.rss
+do
+    func021 ${aa1}
+done
+func03
+
+exit
+#########################################################################
 
 
 
 bb1=r_sctv02
 bb2='麻辣空間02'
-bb3=http://mp4.eaafb.com/mp3_sctv_
-bb4=/v1t/100_sctv/mp3_sctv_
-bb5=https://sctv2019.github.io/all/
 func01 
 for aa1 in ${bb4}
 do
@@ -189,25 +212,6 @@ bb1=r_laohei
 bb2='公民老黑'
 func01 
 for aa1 in laohei2019.mp3.rss laohei2020.mp3.rss laohei2021.mp3.rss laohei2022.mp3.rss
-do
-    func021 ${aa1}
-done
-func03
-
-
-bb1=r_sctv
-bb2='麻辣空間'
-func01 
-for aa1 in sctv2019.mp3.rss sctv2020.mp3.rss sctv2021.mp3.rss sctv2022.mp3.rss
-do
-    func021 ${aa1}
-done
-func03
-
-bb1=r_yolo
-bb2='yolo街'
-func01 
-for aa1 in yolo2022.mp3.rss
 do
     func021 ${aa1}
 done
