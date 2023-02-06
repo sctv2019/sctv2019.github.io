@@ -199,7 +199,7 @@ bb5=https://sctv2019.github.io/all/
 bb1=r_sctv
 bb2='麻辣空間'
 func01 
-for aa1 in sctv2019.mp3.rss sctv2020.mp3.rss sctv2021.mp3.rss sctv2022.mp3.rss
+for aa1 in sctv2019.mp3.rss sctv2020.mp3.rss sctv2021.mp3.rss sctv2022.mp3.rss sctv2023.mp3.rss
 do
     func021 ${aa1}
 done

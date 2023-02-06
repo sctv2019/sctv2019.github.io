@@ -58,7 +58,7 @@ func03
 
 bb1=html_sctv
 mkdir -p ${bb1}
-for aa1 in sctv2019.mp3.rss sctv2020.mp3.rss sctv2021.mp3.rss sctv2022.mp3.rss
+for aa1 in sctv2019.mp3.rss sctv2020.mp3.rss sctv2021.mp3.rss sctv2022.mp3.rss sctv2023.mp3.rss
 do
     func021 ${aa1}
 done
