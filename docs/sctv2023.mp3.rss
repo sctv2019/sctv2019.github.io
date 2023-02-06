@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+    xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
+  <channel>
+    <title>aaaTitle</title>
+    <itunes:owner>
+        <itunes:email>aaa@jjj123.com</itunes:email>
+    </itunes:owner>
+    <itunes:author>aaaAuthor</itunes:author>
+    <description> aaaDescription </description>
+    <itunes:image href="http://icac2201.icacnpo.com/images/photocards/pixabay.com/02-photocard.jpg"/>
+    <language>en-us</language>
+    <link>http://icac2201.icacnpo.com/</link>
+
+
+    <item>
+      <title> 20230115_gJyBI_GKss8.16000.mp3 </title>
+      <description> sctv2023/docs/mp3/20230115_gJyBI_GKss8.16000.mp3 </description>
+      <pubDate> Mon 06 Feb 2023 08:57:56 AM EST </pubDate>
+      <enclosure url="https://raw.githubusercontent.com/sctv2019/sctv2023/main/docs/mp3/20230115_gJyBI_GKss8.16000.mp3"
+      type="audio/mpeg" length="3240184"/>
+      <itunes:duration>26:59</itunes:duration>
+    </item>
+    <item>
+      <title> 20230103_0PXlDBa2QVM.16000.mp3 </title>
+      <description> sctv2023/docs/mp3/20230103_0PXlDBa2QVM.16000.mp3 </description>
+      <pubDate> Mon 06 Feb 2023 08:57:56 AM EST </pubDate>
+      <enclosure url="https://raw.githubusercontent.com/sctv2019/sctv2023/main/docs/mp3/20230103_0PXlDBa2QVM.16000.mp3"
+      type="audio/mpeg" length="2843392"/>
+      <itunes:duration>23:41</itunes:duration>
+    </item>
+    <item>
+      <title> 20230104_GrF91ZdpsS8.16000.mp3 </title>
+      <description> sctv2023/docs/mp3/20230104_GrF91ZdpsS8.16000.mp3 </description>
+      <pubDate> Mon 06 Feb 2023 08:57:56 AM EST </pubDate>
+      <enclosure url="https://raw.githubusercontent.com/sctv2019/sctv2023/main/docs/mp3/20230104_GrF91ZdpsS8.16000.mp3"
+      type="audio/mpeg" length="2765056"/>
+      <itunes:duration>23:02</itunes:duration>
+    </item>
+    <item>
+      <title> 20230206_mQfEg98WrbQ.16000.mp3 </title>
+      <description> sctv2023/docs/mp3/20230206_mQfEg98WrbQ.16000.mp3 </description>
+      <pubDate> Mon 06 Feb 2023 08:57:56 AM EST </pubDate>
+      <enclosure url="https://raw.githubusercontent.com/sctv2019/sctv2023/main/docs/mp3/20230206_mQfEg98WrbQ.16000.mp3"
+      type="audio/mpeg" length="4098424"/>
+      <itunes:duration>34:09</itunes:duration>
+    </item>
+    <item>
+      <title> 20230205__SmY-bDBqfM.16000.mp3 </title>
+      <description> sctv2023/docs/mp3/20230205__SmY-bDBqfM.16000.mp3 </description>
+      <pubDate> Mon 06 Feb 2023 08:57:57 AM EST </pubDate>
+      <enclosure url="https://raw.githubusercontent.com/sctv2019/sctv2023/main/docs/mp3/20230205__SmY-bDBqfM.16000.mp3"
+      type="audio/mpeg" length="3281872"/>
+      <itunes:duration>27:20</itunes:duration>
+    </item>
+    <item>
+      <title> 20230204_ZrQmBYWg6S0.16000.mp3 </title>
+      <description> sctv2023/docs/mp3/20230204_ZrQmBYWg6S0.16000.mp3 </description>
+      <pubDate> Mon 06 Feb 2023 08:57:57 AM EST </pubDate>
+      <enclosure url="https://raw.githubusercontent.com/sctv2019/sctv2023/main/docs/mp3/20230204_ZrQmBYWg6S0.16000.mp3"
+      type="audio/mpeg" length="4625176"/>
+      <itunes:duration>38:32</itunes:duration>
+    </item>
+  </channel>
+</rss>
