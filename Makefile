@@ -10,3 +10,6 @@ m:
 	
 gs:
 	git status
+
+gd:
+	git diff
